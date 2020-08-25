@@ -66,7 +66,7 @@ export const PageHeader: React.FC = () => {
       </Box>
 
       <Box display={{ base: show ? 'block' : 'none', md: 'block' }}>
-        <NextLink href="/login" display="block">
+        <NextLink href="/login">
           <MetaButton>Sign in</MetaButton>
         </NextLink>
       </Box>

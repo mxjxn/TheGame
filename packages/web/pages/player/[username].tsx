@@ -1,4 +1,5 @@
 import { Container, MetaBox, SimpleGrid, Text } from '@metafam/ds';
+import PlayerAboutMe from 'components/Player/PlayerAboutMe';
 import { PlayerFeatures } from 'components/Player/PlayerFeatures';
 import { PlayerHero } from 'components/Player/PlayerHero';
 import { getPlayer } from 'graphql/getPlayer';
@@ -24,11 +25,7 @@ const PlayerPage: React.FC<Props> = ({ player }) => {
       <PlayerFeatures player={player} />
       <Container maxW="xl">
         <SimpleGrid columns={[1, 1, 2, 3]} spacing="8" pt="12">
-          <MetaBox title="About me">
-            <Text fontFamily="body" fontSize="2xl" fontWeight="bold" mb={4}>
-              Box 1
-            </Text>
-          </MetaBox>
+          <PlayerAboutMe player={player} />
           <MetaBox title="Skills">
             <Text fontFamily="body" fontSize="2xl" fontWeight="bold" mb={4}>
               Box 2
